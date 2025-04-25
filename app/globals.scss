@@ -1,0 +1,70 @@
+@use "./styles/fonts";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: HelveticaNeue, sans-serif;
+}
+
+.sectionPadding {
+    @apply px-6;
+    /* @apply p-[1.25rem] md:py-4 md:px-14 min-[1550px]:px-[16%]; */
+    /* @apply p-[1.25rem] md:px-[5rem] min-[1300px]:px-[16%] lg:px-[10rem]; */
+}
+
+.container {
+    @apply max-w-7xl mx-auto;
+}
+
+@layer utilities {
+    .animate-spin-slow {
+        animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@layer utilities {
+    .animate-rotate-arm {
+        animation: rotate-arm 4s linear infinite;
+        transform-origin: center;
+    }
+
+    @keyframes rotate-arm {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
