@@ -19,7 +19,7 @@ export default function ClaimYourSpot({}: Props) {
           className="space-y-12 mb-10"
         >
           <motion.div variants={itemVariants} className="space-y-4">
-            <h2 className="text-6xl font-normal text-white w-[60%]">
+            <h2 className="text-4xl md:text-6xl text-center md:text-left font-normal text-white md:w-[60%]">
               The future of storytelling needs your voice.
             </h2>
           </motion.div>
@@ -27,7 +27,7 @@ export default function ClaimYourSpot({}: Props) {
 
         <div className="flex flex-col md:flex-row p-6 pl-0 border-e-2 border-t-2 border-white rounded-tr-3xl">
           <div className="flex flex-col mb-10 scale-90 md:scale-100 md:mb-0">
-            <h4 className="text-4xl mb-6 w-[80%] text-gray-300">
+            <h4 className="text-3xl md:text-4xl mb-6 md:w-[80%] text-gray-300">
               Dimlang is inviting the first wave of visionary creators,
               campaigners, and content teams to shape what's next.
             </h4>
