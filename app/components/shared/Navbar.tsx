@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -8,11 +8,14 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import images from "@/public/images";
 import { usePathname } from "next/navigation";
+import useOuterClick from "@/app/hooks/useOuterClick";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
+  const navbarContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +32,8 @@ const Navbar = () => {
     { name: "Service", href: "/service" },
     { name: "About", href: "/about" },
   ];
+
+  useOuterClick(navbarContainerRef, setIsOpen);
 
   return (
     <motion.header
@@ -93,6 +98,7 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden bg-black/95 backdrop-blur-md mt-4 rounded-lg overflow-hidden"
+            ref={navbarContainerRef}
           >
             <div className="py-4 px-6 flex flex-col space-y-4">
               {navLinks.map((link) => (
