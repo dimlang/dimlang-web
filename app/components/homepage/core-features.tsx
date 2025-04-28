@@ -42,7 +42,7 @@ export default function CoreFeatures({}: Props) {
   ];
 
   return (
-    <section className="sectionPadding bg-[#050505] py-24 px-6">
+    <section className="sectionPadding bg-[#050505] py-12 md:py-24 px-6">
       <div className="container">
         <motion.div
           initial="hidden"
@@ -52,7 +52,7 @@ export default function CoreFeatures({}: Props) {
           className="space-y-12 mb-10"
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
-            <h2 className="text-7xl font-normal text-white">
+            <h2 className="text-5xl md:text-7xl font-normal text-white">
               Our Core Features
             </h2>
           </motion.div>
