@@ -16,13 +16,13 @@ export default function ProductVision() {
           className="space-y-12 mb-10"
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
-            <h2 className="text-7xl font-normal text-white">
+            <h2 className="text-5xl md:text-7xl font-normal text-white">
               Product Vision Tease
             </h2>
           </motion.div>
 
-          <div className="container">
-            <div className="relative w-1/2 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm"> {/* before:animate-spin-slow */}
+          <div className="md:container">
+            <div className="relative w-full md:w-1/2 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm"> {/* before:animate-spin-slow */}
               {/* Content Box */}
               <div className="relative p-4 bg-black rounded-[inherit] border border-white/20 z-10">
                 <p className="text-center leading-8 text-white">
