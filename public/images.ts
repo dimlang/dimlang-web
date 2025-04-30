@@ -8,6 +8,10 @@ import wif_content from "./images/wif_content.png";
 import wif_micro from "./images/wif_micro.png";
 import core_features from "./images/core_features.png";
 import storytelling from "./images/storytelling.jpg";
+import about_hero_1 from "./images/about_hero_1.png";
+import about_hero_2 from "./images/about_hero_2.png";
+import about_hero_3 from "./images/about_hero_3.png";
+import description from "./images/description.png";
 
 export default {
   logo,
@@ -20,4 +24,8 @@ export default {
   wif_micro,
   core_features,
   storytelling,
+  about_hero_1,
+  about_hero_2,
+  about_hero_3,
+  description
 };
