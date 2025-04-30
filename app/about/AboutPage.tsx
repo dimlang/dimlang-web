@@ -11,7 +11,7 @@ type Props = {};
 
 export default function AboutPage({}: Props) {
   return (
-    <>
+    <main className="bg-black">
       <section className="sectionPadding py-40 pb-20 md:!py-40 relative overflow-hidden">
         <div className="container text-center md:text-left mb-14">
           <motion.h1
@@ -129,6 +129,6 @@ export default function AboutPage({}: Props) {
       </section>
 
       <ClaimYourSpot />
-    </>
+    </main>
   );
 }

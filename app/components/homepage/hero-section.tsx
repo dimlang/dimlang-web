@@ -24,7 +24,7 @@ export default function HeroSection({}: Props) {
   };
 
   return (
-    <section className="sectionPadding py-40 pb-20 md:!py-40 relative overflow-hidden">
+    <section className="sectionPadding bg-black py-40 pb-20 md:!py-40 relative overflow-hidden">
       <div className="container text-center mb-10">
         <motion.h1
           variants={item}
