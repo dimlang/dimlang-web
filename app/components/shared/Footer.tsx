@@ -29,7 +29,7 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white pt-14">
       <div className="container pb-10 md:pb-20">
         <div className="border-b border-white/50 w-[85%] md:w-1/2 mx-auto pb-5 mb-12">
           <Image
