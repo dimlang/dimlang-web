@@ -13,7 +13,7 @@ export default function AboutPage({}: Props) {
   return (
     <main className="bg-black">
       <section className="sectionPadding py-40 pb-20 md:!py-40 relative overflow-hidden">
-        <div className="container text-center md:text-left mb-14">
+        <div className="container text-center md:text-left mb-14 z-10">
           <motion.h1
             variants={itemVariants}
             className="text-5xl md:text-9xl font-medium pb-3"

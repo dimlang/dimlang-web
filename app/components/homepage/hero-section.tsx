@@ -34,7 +34,7 @@ export default function HeroSection({}: Props) {
         </motion.h1>
         <motion.p
           variants={item}
-          className="text-xl font-[200] w-full md:w-[50%] mx-auto pb-6"
+          className="text-xl font-[200] w-full md:w-[50%] mx-auto pb-6 text-white"
         >
           Dimlang is the AI-native platform where content becomes culture. One
           upload, infinite impact through emotion, precision, and global reach.
