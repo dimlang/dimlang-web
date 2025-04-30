@@ -16,13 +16,13 @@ export default function AboutPage({}: Props) {
         <div className="container text-center md:text-left mb-14 z-10">
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-9xl font-medium pb-3"
+            className="text-5xl md:text-9xl font-medium pb-3 z-10"
           >
             About Us
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="text-xl font-[200] w-full md:w-[50%] mb-6"
+            className="text-xl font-[200] w-full md:w-[50%] mb-6 z-10"
           >
             Next-generation AI platform built for creators, storytellers, and
             brands who want to do more with their long-form content
