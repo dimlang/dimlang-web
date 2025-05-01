@@ -42,7 +42,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="md:col-span-8 flex flex-col md:flex-row md:justify-between justify-start gap-8 w-[60%] mx-auto">
+        <div className="md:col-span-8 flex flex-col md:flex-row md:justify-between justify-start gap-8 w-[60%] md:w-[30%] mx-auto">
           {Object.entries(footerLinks).map(([key, section]) => (
             <div key={key}>
               <h3 className="text-white/65 text-sm mb-4">
