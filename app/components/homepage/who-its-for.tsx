@@ -76,7 +76,7 @@ const WhoItsForSection = () => {
                 <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                   Creators & Influencers
                 </h4>
-                <p className="w-full h:w-[60%]">
+                <p className="w-full md:w-[60%]">
                   Transform your raw footage into studio-grade content in
                   seconds. Go viral, with intention.
                 </p>
@@ -93,7 +93,7 @@ const WhoItsForSection = () => {
                 <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                   Brand & Marketing Teams
                 </h4>
-                <p className="w-full h:w-[60%]">
+                <p className="w-full md:w-[60%]">
                   Launch campaigns at the speed of thought. Test messages, track
                   resonance, and stay 10 steps ahead.
                 </p>
@@ -128,7 +128,7 @@ const WhoItsForSection = () => {
                   <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                     Content Editors & Assistants
                   </h4>
-                  <p className="w-full h:w-[60%]">
+                  <p className="w-full md:w-[60%]">
                     Save hours of grunt work. Let Dimlang handle the cuts,
                     captions, and tone, you handle the creative.
                   </p>
