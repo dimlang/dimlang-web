@@ -11,13 +11,13 @@ const footerLinks = {
     title: "Product",
     links: [{ name: "Features", href: "/features" }],
   },
-  explore: {
-    title: "Explore",
-    links: [
-      { name: "Features", href: "/features" },
-      { name: "Blog", href: "/blog" },
-    ],
-  },
+//   explore: {
+//     title: "Explore",
+//     links: [
+//       { name: "Features", href: "/features" },
+//       { name: "Blog", href: "/blog" },
+//     ],
+//   },
   company: {
     title: "Company",
     links: [
