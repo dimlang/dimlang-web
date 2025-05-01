@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="md:col-span-8 flex flex-col md:flex-row md:justify-between justify-start gap-8 w-[60%] mx-auto">
           {Object.entries(footerLinks).map(([key, section]) => (
             <div key={key}>
-              <h3 className="text-gray-400 text-sm font-medium mb-4">
+              <h3 className="text-white/65 text-sm font-medium mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-3">
@@ -53,7 +53,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-gray-300 hover:text-white transition-colors duration-200"
+                      className="text-gray-300 hover:text-white transition-colors duration-200 text-base"
                     >
                       {link.name}
                     </Link>
