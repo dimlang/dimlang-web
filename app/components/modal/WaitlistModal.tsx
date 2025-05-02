@@ -159,15 +159,17 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
             </label>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Input
-                  className="text-left bg-white text-black"
-                  value={preferredPlatform ?? "Select platform"}
-                  onChange={(e) => {}}
-                />
-                <ChevronDown
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
-                  size={16}
-                />
+                <div className="relative">
+                  <Input
+                    className="text-left bg-white text-black"
+                    value={preferredPlatform ?? "Select platform"}
+                    onChange={(e) => {}}
+                  />
+                  <ChevronDown
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+                    size={16}
+                  />
+                </div>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                 {/* <DropdownMenuLabel>Select type</DropdownMenuLabel> */}
