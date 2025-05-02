@@ -9,12 +9,14 @@ import Image from "next/image";
 import images from "@/public/images";
 import { usePathname } from "next/navigation";
 import useOuterClick from "@/app/hooks/useOuterClick";
+import { useApplicationContext } from "@/app/context/ApplicationContext";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+  const { setIsWaitlistModalVisible } = useApplicationContext();
+
   const navbarContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Service", href: "/service" },
+    { name: "Service", href: "/#services" },
     { name: "About", href: "/about" },
   ];
 
@@ -63,21 +65,24 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`transition-colors duration-200 ${pathname == link.href ? 'text-white' : 'text-grey/60 hover:text-white'}`}
+              className={`transition-colors duration-200 ${
+                pathname == link.href
+                  ? "text-white"
+                  : "text-grey/60 hover:text-white"
+              }`}
             >
               {link.name}
             </Link>
           ))}
         </nav>
-        <Link href="/waitlist" className="hidden md:block">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
-          >
-            Join the Waitlist
-          </motion.button>
-        </Link>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => setIsWaitlistModalVisible(true)}
+          className="bg-primary hover:bg-primary-sub text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
+        >
+          Join the Waitlist
+        </motion.button>
 
         {/* Mobile menu button */}
         <button
@@ -116,7 +121,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="inline-block"
               >
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 text-sm w-full mt-2">
+                <button className="bg-primary hover:bg-primary-sub text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 text-sm w-full mt-2">
                   Join the Waitlist
                 </button>
               </Link>
