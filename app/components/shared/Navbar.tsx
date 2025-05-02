@@ -116,15 +116,15 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                href="/waitlist"
-                onClick={() => setIsOpen(false)}
-                className="inline-block"
+              <button
+                onClick={() => {
+                  setIsWaitlistModalVisible(true);
+                  setIsOpen(false);
+                }}
+                className="inline-block bg-primary hover:bg-primary-sub text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 text-sm w-full mt-2"
               >
-                <button className="bg-primary hover:bg-primary-sub text-white px-6 py-2 rounded-full font-medium transition-colors duration-200 text-sm w-full mt-2">
-                  Join the Waitlist
-                </button>
-              </Link>
+                Join the Waitlist
+              </button>
             </div>
           </motion.div>
         )}
