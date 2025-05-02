@@ -6,10 +6,16 @@ import { containerVariants, itemVariants } from "../constants/aniamtions";
 import Image from "next/image";
 import images from "@/public/images";
 import ClaimYourSpot from "../components/homepage/claim-spot";
+import useResponsiveness from "../hooks/useResponsiveness";
 
 type Props = {};
 
 export default function AboutPage({}: Props) {
+  const windowRes = useResponsiveness();
+  const isMobile = windowRes.width && windowRes.width < 768;
+  const onMobile = typeof isMobile == "boolean" && isMobile;
+  const onDesktop = typeof isMobile == "boolean" && !isMobile;
+
   return (
     <main className="bg-black">
       <section className="sectionPadding py-40 pb-20 md:!py-40 relative overflow-hidden">
@@ -28,8 +34,20 @@ export default function AboutPage({}: Props) {
             brands who want to do more with their long-form content
           </motion.p>
         </div>
-        <div className="container md:h-[100px] w-full z-10 mb-14">
-          <div className="md:w-screen flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6 z-10">
+        <div className="container md:h-[100px] w-full !z-20 mb-14">
+          <motion.div
+            animate={onMobile ? undefined : { x: ["0%", "-20%", "0%"] }}
+            transition={
+              onMobile
+                ? undefined
+                : {
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }
+            }
+            className="md:w-screen flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6 !z-20"
+          >
             <div className="h-[250px] w-full md:w-[520px] relative rounded-xl overflow-hidden z-10">
               <Image
                 src={images.about_hero_1}
@@ -57,7 +75,7 @@ export default function AboutPage({}: Props) {
                 priority
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="w-full h-[80px] md:h-1/2 absolute bottom-0">
           <div className="absolute top-0 left-1/3 -translate-x-1/2 w-[120%] h-full bg-gradient-to-r from-pink-500 via-teal-400 to-indigo-500 opacity-30 blur-3xl rounded-full mix-blend-screen animate-wave" />
@@ -97,33 +115,33 @@ export default function AboutPage({}: Props) {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1, duration: 0.6 }}
-                className="absolute -left-4 top-10 w-16 h-16 bg-purple-600/20 backdrop-blur-sm rounded-full border border-purple-500/30"
+                className="absolute -left-4 top-10 w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-purple-500/30"
               />
             </motion.div>
 
-              <div className="relative basis-2/5 w-full p-[1px] rounded-2xl overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm">
-                {" "}
-                {/* before:animate-spin-slow */}
-                {/* Content Box */}
-                <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
-                  <p className="text-center leading-8 md:leading-10 text-white">
-                    Dimlang is a next-generation AI platform built for creators,
-                    storytellers, and brands who want to do more with their
-                    long-form content. From interviews to podcasts, we use
-                    powerful AI to automatically remix and repurpose your videos
-                    into short-form clips that capture attention, spark emotion,
-                    and drive engagement across platforms like Instagram,
-                    YouTube, and TikTok.
-                    <br />
-                    <br />
-                    We exist to make creative content more scalable, more
-                    strategic, and more impactful.From ideation to execution,
-                    Dimlang powers the entire content lifecycle, helping
-                    creators go from raw ideas to finished, platform-ready
-                    stories with speed and precision.
-                  </p>
-                </div>
+            <div className="relative basis-2/5 w-full p-[1px] rounded-2xl overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm">
+              {" "}
+              {/* before:animate-spin-slow */}
+              {/* Content Box */}
+              <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
+                <p className="text-center leading-8 md:leading-10 text-white">
+                  Dimlang is a next-generation AI platform built for creators,
+                  storytellers, and brands who want to do more with their
+                  long-form content. From interviews to podcasts, we use
+                  powerful AI to automatically remix and repurpose your videos
+                  into short-form clips that capture attention, spark emotion,
+                  and drive engagement across platforms like Instagram, YouTube,
+                  and TikTok.
+                  <br />
+                  <br />
+                  We exist to make creative content more scalable, more
+                  strategic, and more impactful.From ideation to execution,
+                  Dimlang powers the entire content lifecycle, helping creators
+                  go from raw ideas to finished, platform-ready stories with
+                  speed and precision.
+                </p>
               </div>
+            </div>
           </div>
         </div>
       </section>
