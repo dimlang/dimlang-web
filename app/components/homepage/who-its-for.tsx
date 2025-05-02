@@ -10,7 +10,7 @@ const categories = [
     title: "Creators & Influencers",
     description:
       "Transform your raw footage into studio-grade content in seconds. No crew, no hassle.",
-    bgColor: "bg-purple-600",
+    bgColor: "bg-primary",
     image:
       "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
@@ -50,7 +50,7 @@ const categories = [
 
 const WhoItsForSection = () => {
   return (
-    <section className="sectionPadding bg-[#050505] py-24 px-6">
+    <section className="sectionPadding bg-[#050505] py-24 px-6" id="services">
       <div className="container">
         <motion.div
           initial="hidden"

@@ -3,10 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import images from "@/public/images";
+import { useApplicationContext } from "@/app/context/ApplicationContext";
 
 type Props = {};
 
 export default function HeroSection({}: Props) {
+  const { setIsWaitlistModalVisible } = useApplicationContext();
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -44,6 +47,7 @@ export default function HeroSection({}: Props) {
             scale: 1.05,
             boxShadow: "0 0 20px rgba(124, 58, 237, 0.5)",
           }}
+          onClick={() => setIsWaitlistModalVisible(true)}
           whileTap={{ scale: 0.95 }}
           className="bg-primary hover:primary-sub text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
         >

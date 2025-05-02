@@ -42,7 +42,7 @@ export default function CoreFeatures({}: Props) {
   ];
 
   return (
-    <section className="sectionPadding bg-[#050505] py-12 md:py-24 px-6">
+    <section className="sectionPadding bg-[#050505] py-12 md:py-24 px-6" id="features">
       <div className="container">
         <motion.div
           initial="hidden"
@@ -103,7 +103,7 @@ export default function CoreFeatures({}: Props) {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
-              className="absolute -left-4 top-10 w-16 h-16 bg-purple-600/20 backdrop-blur-sm rounded-full border border-purple-500/30"
+              className="absolute -left-4 top-10 w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-purple-500/30"
             />
           </motion.div>
         </div>
