@@ -28,7 +28,12 @@ export default function HeroSection({}: Props) {
 
   return (
     <section className="sectionPadding bg-black py-40 pb-20 md:!py-40 relative overflow-hidden">
-      <div className="container text-center mb-10">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="container text-center mb-10"
+      >
         <motion.h1
           variants={item}
           className="text-5xl font-semibold pb-3 bg-clip-text text-transparent animate-gradient bg-[length:150%_150%] bg-gradient-to-t from-gray-700 to-white"
@@ -53,8 +58,11 @@ export default function HeroSection({}: Props) {
         >
           Join the Creative Revolution
         </motion.button>
-      </div>
-      <div className="container h-[200px] md:h-[600px] rounded-xl relative overflow-hidden z-10">
+      </motion.div>
+      <motion.div
+        variants={item}
+        className="container h-[200px] md:h-[600px] rounded-xl relative overflow-hidden z-10"
+      >
         <Image
           src={images.hero_image}
           alt="Hero image"
@@ -62,7 +70,7 @@ export default function HeroSection({}: Props) {
           className="object-cover"
           priority
         />
-      </div>
+      </motion.div>
       <div className="w-full h-[80px] md:h-1/2 absolute bottom-0">
         {/* <Image
           src={images.hero_gradient}
