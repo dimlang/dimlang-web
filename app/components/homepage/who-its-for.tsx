@@ -105,7 +105,7 @@ const WhoItsForSection = () => {
                 className="object-cover"
               />
             </div>
-            <div className="col-span-full md:col-span-2 h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[160px] before:md:h-[250px] before:bg-gradient-to-b before:from-[#407df7] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
+            <div className="col-span-full md:col-span-2 h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[160px] before:md:h-[250px] before:bg-gradient-to-b before:from-[#142F66] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
               <div className="absolute p-5 md:p-0 md:top-8 md:left-8 z-10">
                 <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                   Political Campaigns <br /> & Advocacy Orgs
@@ -140,7 +140,7 @@ const WhoItsForSection = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="col-span-full md:col-span-1 h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[250px] before:bg-gradient-to-b before:from-[#355eab] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
+              <div className="col-span-full md:col-span-1 h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[250px] before:bg-gradient-to-b before:from-[#142F66] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
                 <div className="absolute p-5 md:p-0 md:top-8 md:left-8 z-10">
                   <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                     Micro-Agencies
