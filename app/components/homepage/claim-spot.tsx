@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/app/constants/aniamtions";
 import images from "@/public/images";
 import Image from "next/image";
+import { useApplicationContext } from "@/app/context/ApplicationContext";
 
 type Props = {};
 
 export default function ClaimYourSpot({}: Props) {
+  const { setIsWaitlistModalVisible } = useApplicationContext();
   return (
     <section className="sectionPadding bg-[#050505] py-12 px-6">
       <div className="container">
@@ -31,7 +33,10 @@ export default function ClaimYourSpot({}: Props) {
               Dimlang is inviting the first wave of visionary creators,
               campaigners, and content teams to shape what's next.
             </h4>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full w-fit font-medium transition-colors duration-200 text-sm">
+            <button
+              onClick={() => setIsWaitlistModalVisible(true)}
+              className="bg-primary hover:bg-primary-sub text-white px-6 py-3 rounded-full w-fit font-medium transition-colors duration-200 text-sm"
+            >
               Claim Your Spot
             </button>
           </div>
