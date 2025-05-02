@@ -1,16 +1,21 @@
+"use client"
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import NextTopLoader from 'nextjs-toploader';
+import NextTopLoader from "nextjs-toploader";
+import { useApplicationContext } from "@/app/context/ApplicationContext";
+import WaitlistModal from "../modal/WaitlistModal";
 
 type Props = {
   children?: ReactNode;
 };
 
 export default function LayoutWrapper({ children }: Props) {
+  const {isWaitlistModalVisible, setIsWaitlistModalVisible} = useApplicationContext();
+
   return (
     <>
-    <NextTopLoader
+      <NextTopLoader
         color="#fff"
         initialPosition={0.08}
         crawlSpeed={200}
@@ -20,7 +25,11 @@ export default function LayoutWrapper({ children }: Props) {
         easing="ease"
         speed={200}
         shadow="0 0 10px #f1fa9e,0 0 5px #ceb0fa"
-    />
+      />
+      <WaitlistModal
+          visibility={isWaitlistModalVisible}
+          setVisibility={setIsWaitlistModalVisible}
+      />
 
       <Navbar />
       {children}
