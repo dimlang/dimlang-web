@@ -79,7 +79,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setIsWaitlistModalVisible(true)}
-          className="bg-primary hover:bg-primary-sub text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
+          className="hidden md:block bg-primary hover:bg-primary-sub text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
         >
           Join the Waitlist
         </motion.button>
