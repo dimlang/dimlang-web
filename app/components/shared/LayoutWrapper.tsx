@@ -16,7 +16,7 @@ export default function LayoutWrapper({ children }: Props) {
     useApplicationContext();
 
   return (
-    <>
+    <div>
       <NextTopLoader
         color="#fff"
         initialPosition={0.08}
@@ -37,6 +37,6 @@ export default function LayoutWrapper({ children }: Props) {
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
