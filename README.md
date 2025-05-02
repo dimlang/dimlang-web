@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dimlang – The Future of AI-Driven Content Creation
 
-## Getting Started
+Welcome to the official landing page for **Dimlang**, the AI platform built to empower creators, marketers, and brands with intelligent, automated content creation.
 
-First, run the development server:
+We believe in freeing you from the grind of edits, captions, and platform wrangling — so you can focus on what matters: **your story**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What is Dimlang?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Dimlang is your AI-powered creative partner. We’re building a full-stack content engine that:
+- **Automates video/audio editing** with smart cut detection
+- **Generates captions**, voiceovers, and scene tone — instantly
+- **Integrates seamlessly** with platforms like Instagram, TikTok, YouTube, and more
+- Offers creators and businesses a way to **scale storytelling without burning out**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repository contains the **front-end code** for our waitlist landing page — the first step in welcoming users to the revolution.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Join the Movement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We’re actively building in public. If you’re a creator, founder, or forward-thinking team:
+**Get on the waitlist today. Be first. Be loud.**  
+[https://dimlang.com](https://dimlang.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org/) – Fast, scalable React framework
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
+- [Supabase](https://supabase.com/) – Backing our waitlist (serverless, secure, and slick)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Want to Contribute?
+
+We’re not accepting public contributions just yet — but:
+- **Star** the repo to show support  
+- **Share** Dimlang with creators who need it  
+- **Follow** our progress and updates — we’re just getting started
+
+---
+
+## License
+
+This repository is for promotional and informational purposes only.  
+All content, code, and assets are the property of **Dimlang Inc.**
+
+---
+
+**Dimlang is building the tools to turn your voice into influence.**  
+*No more grunt work. Just great content.*
