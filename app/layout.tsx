@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import LayoutWrapper from "./components/shared/LayoutWrapper";
+import GlobalProvider from "./components/shared/Provider";
 
 export const metadata: Metadata = {
   title: "Dimlang",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <GlobalProvider>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </GlobalProvider>
       </body>
     </html>
   );
