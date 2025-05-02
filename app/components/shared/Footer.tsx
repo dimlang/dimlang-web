@@ -9,7 +9,7 @@ import images from "@/public/images";
 const footerLinks = {
   product: {
     title: "Product",
-    links: [{ name: "Features", href: "/features" }],
+    links: [{ name: "Features", href: "/#features" }],
   },
 //   explore: {
 //     title: "Explore",
@@ -22,7 +22,7 @@ const footerLinks = {
     title: "Company",
     links: [
       { name: "About us", href: "/about" },
-      { name: "Contact us", href: "/contact" },
+    //   { name: "Contact us", href: "/contact" },
     ],
   },
 };
