@@ -37,7 +37,7 @@ import {
         ref={modalContainerRef}
       >
         <div
-          className={`bg-[rgba(34,34,34,0.6)] absolute size-full top-0 left-0 ${
+          className={`bg-[rgba(0,0,0,0.8)] absolute size-full top-0 left-0 ${
               visibility
               ? "opacity-100"
               : "opacity-0 animate-overlayFadeOut"
