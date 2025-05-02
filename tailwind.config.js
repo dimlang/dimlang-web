@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        HelveticaNeue: ['HelveticaNeue"', "sans-serif"],
+        HelveticaNeue: ['HelveticaNeue', "sans-serif"],
       },
       colors: {
         grey: "#C2C2C2",
