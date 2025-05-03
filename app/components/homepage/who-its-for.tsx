@@ -71,7 +71,7 @@ const WhoItsForSection = () => {
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
           >
-            <div className="col-span-full h-[250px] md:h-[400px] text-white relative">
+            <div className="col-span-full h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:md:bg-none before:absolute before:top-0 before:left-0 before:w-full before:h-[250px] before:bg-gradient-to-b before:from-[#593DD0] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
               <div className="absolute p-5 md:p-0 md:top-8 md:left-8 z-10">
                 <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                   Creators & Influencers
@@ -123,7 +123,7 @@ const WhoItsForSection = () => {
               />
             </div>
             <div className="col-span-full grid grid-cols-2 gap-6">
-              <div className="col-span-full md:col-span-1 h-[250px] md:h-[400px] text-white relative">
+              <div className="col-span-full md:col-span-1 h-[250px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:md:bg-none before:absolute before:top-0 before:left-0 before:w-full before:h-[250px] before:bg-gradient-to-b before:from-[#16023F] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
                 <div className="absolute p-5 md:p-0 md:top-8 md:left-8 z-10">
                   <h4 className="text-2xl md:text-3xl font-semibold mb-1">
                     Content Editors & Assistants
