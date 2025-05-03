@@ -82,8 +82,8 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
         width: "fit-content",
       }}
     >
-      <div className="w-full sm:w-[25rem] p-6 rounded-[20px] glass-effect">
-        <div className="flex justify-between items-start">
+      <div className="w-full sm:w-[28rem] p-6 md:p-8 rounded-[20px] glass-effect">
+        <div className="flex flex-row justify-center items-center">
           <div className="flex flex-col items-center">
             <h3 className="mb-1 text-xl font-medium">Unlock Early Access</h3>
             <p className="text-white text-[0.8rem] font-normal opacity-80 text-center">
@@ -97,7 +97,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
             <Icons.Close />
           </span> */}
         </div>
-        <div className="mt-5 flex flex-col gap-3">
+        <div className="mt-5 flex flex-col gap-4">
           <Input
             placeholder="Full name"
             className="bg-white border-none text-black"
@@ -122,7 +122,9 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
                 <div className="relative">
                   <Input
                     readOnly
-                    className="text-left bg-white text-black pr-10 cursor-pointer"
+                    className={`text-left bg-white pr-10 cursor-pointer ${
+                      preferredContentType ? "text-black" : "text-black/55"
+                    }`}
                     value={preferredContentType ?? "Select category"}
                   />
                   <ChevronDown
@@ -161,7 +163,9 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
               <DropdownMenuTrigger asChild>
                 <div className="relative">
                   <Input
-                    className="text-left bg-white text-black"
+                    className={`text-left bg-white pr-10 cursor-pointer ${
+                      preferredPlatform ? "text-black" : "text-black/55"
+                    }`}
                     value={preferredPlatform ?? "Select platform"}
                     onChange={(e) => {}}
                   />
