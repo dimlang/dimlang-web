@@ -10,7 +10,7 @@ export class ApiRoutes {
   /**
    * The test base url for the application
    */
-  static BASE_URL_TEST: string = "https://apitest.dimlang.com/";
+  static BASE_URL_TEST: string = "https://dimlang-alb-dev-664463360.us-east-1.elb.amazonaws.com/api/v1";
 
   /**
    * The live base url for the application
@@ -20,7 +20,7 @@ export class ApiRoutes {
   /**
    * The base url being used for the application
    */
-  static BASE_URL: string = ApiRoutes.BASE_URL_LIVE;
+  static BASE_URL: string = ApiRoutes.BASE_URL_TEST;
 
   /**
    * The route to Waitlist Subscription endpoint
