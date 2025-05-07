@@ -13,6 +13,7 @@ import { useApplicationContext } from "@/app/context/ApplicationContext";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [hashFragment, setHashFragment] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { setIsWaitlistModalVisible } = useApplicationContext();
@@ -36,6 +37,31 @@ const Navbar = () => {
   ];
 
   useOuterClick(navbarContainerRef, setIsOpen);
+
+  // Update hash fragment when the URL changes
+  useEffect(() => {
+    const updateHashFragment = () => {
+      setHashFragment(window.location.hash);
+    };
+
+    if (typeof window !== "undefined") {
+      updateHashFragment();
+      window.addEventListener("hashchange", updateHashFragment);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("hashchange", updateHashFragment);
+      }
+    };
+  }, []);
+
+  const isActive = (linkHref: string) => {
+    if (linkHref.startsWith("/#")) {
+      return hashFragment === linkHref.slice(1); // Match hash fragment
+    }
+    return pathname === linkHref; // Match pathname
+  };
 
   return (
     <motion.header
@@ -65,11 +91,12 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`transition-colors duration-200 ${
-                pathname == link.href
+              className={cn(
+                "transition-colors duration-200",
+                isActive(link.href)
                   ? "text-white"
                   : "text-grey/60 hover:text-white"
-              }`}
+              )}
             >
               {link.name}
             </Link>
