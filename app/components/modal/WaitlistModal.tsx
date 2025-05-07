@@ -62,7 +62,12 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
       toast.success("Successfully joined the waitlist!");
       unsetValues();
       setVisibility(false);
-    } catch (err) {
+    } catch (err: any) {
+    console.log("🚀 ~ handleSubmit ~ err:", err)
+    if (err && err.response?.data?.detail == "Email already signed up") {
+        toast.error("Email already signed up for the waitlist.");
+        return;
+    }
       toast.error("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
