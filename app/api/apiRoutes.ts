@@ -15,7 +15,7 @@ export class ApiRoutes {
   /**
    * The live base url for the application
    */
-  static BASE_URL_LIVE: string = "https://api.dimlang.com/api/v1";
+  static BASE_URL_LIVE: string = "https://dimlang-alb-dev-664463360.us-east-1.elb.amazonaws.com/api/v1";
 
   /**
    * The base url being used for the application

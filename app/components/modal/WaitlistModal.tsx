@@ -55,8 +55,8 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
       await subscribeToWaitlist({
         fullName,
         email,
-        contentType: `preferredContentTypes`,
-        preferredPlatform: `preferredPlatforms`,
+        contentTypes: preferredContentTypes,
+        preferredPlatforms: preferredPlatforms,
       });
 
       toast.success("Successfully joined the waitlist!");
