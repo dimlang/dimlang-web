@@ -34,7 +34,7 @@ export default function AboutPage({}: Props) {
             brands who want to do more with their long-form content
           </motion.p>
         </div>
-        <div className="container md:h-[100px] w-full !z-20 mb-14">
+        <div className="container md:h-[100px] w-full mb-14 relative z-20">
           <motion.div
             animate={onMobile ? undefined : { x: ["0%", "-20%", "0%"] }}
             transition={
@@ -46,9 +46,9 @@ export default function AboutPage({}: Props) {
                     ease: "linear",
                   }
             }
-            className="md:w-screen flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6 !z-20"
+            className="md:w-screen flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
           >
-            <div className="h-[250px] w-full md:w-[520px] relative rounded-xl overflow-hidden z-10">
+            <div className="h-[250px] w-full md:w-[520px] relative rounded-xl overflow-hidden">
               <Image
                 src={images.about_hero_1}
                 alt=""
@@ -57,7 +57,7 @@ export default function AboutPage({}: Props) {
                 priority
               />
             </div>
-            <div className="h-[250px] w-full md:w-[520px] relative rounded-xl overflow-hidden z-10">
+            <div className="h-[250px] w-full md:w-[520px] relative rounded-xl overflow-hidden">
               <Image
                 src={images.about_hero_2}
                 alt=""
@@ -66,7 +66,7 @@ export default function AboutPage({}: Props) {
                 priority
               />
             </div>
-            <div className="h-[250px] w-full md:w-[520px] relative perspective-1000 rounded-xl overflow-hidden z-10">
+            <div className="h-[250px] w-full md:w-[520px] relative perspective-1000 rounded-xl overflow-hidden">
               <Image
                 src={images.about_hero_3}
                 alt=""
@@ -77,8 +77,8 @@ export default function AboutPage({}: Props) {
             </div>
           </motion.div>
         </div>
-        <div className="w-full h-[80px] md:h-1/2 absolute bottom-0">
-          <div className="absolute top-0 left-1/3 -translate-x-1/2 w-[120%] h-full bg-gradient-to-r from-pink-500 via-teal-400 to-indigo-500 opacity-30 blur-3xl rounded-full mix-blend-screen animate-wave" />
+        <div className="w-full h-[80px] md:h-1/2 absolute bottom-0 z-[1]">
+          <div className=" z-[1] absolute top-0 left-1/3 -translate-x-1/2 w-[120%] h-full bg-gradient-to-r from-pink-500 via-teal-400 to-indigo-500 opacity-30 blur-3xl rounded-full mix-blend-screen animate-wave" />
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function AboutPage({}: Props) {
           <div className="flex flex-col md:flex-row md:justify-between gap-14">
             <motion.div
               variants={itemVariants}
-              className="relative basis-full min-h-[400px] md:min-h-0 md:basis-[35%] md:aspect-auto rounded-2xl overflow-hidden"
+              className="relative basis-full min-h-[400px] md:min-h-0 md:basis-[35%] md:aspect-auto rounded-2xl overflow-hidden scale-90"
             >
               <div className="absolute inset-0">
                 {/* <div
@@ -124,7 +124,7 @@ export default function AboutPage({}: Props) {
               {/* before:animate-spin-slow */}
               {/* Content Box */}
               <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
-                <p className="text-center leading-8 md:leading-10 text-white">
+                <p className="text-center text-lg leading-8 md:leading-10 text-white">
                   Dimlang is a next-generation AI platform built for creators,
                   storytellers, and brands who want to do more with their
                   long-form content. From interviews to podcasts, we use
