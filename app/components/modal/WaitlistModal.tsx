@@ -64,7 +64,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
       setVisibility(false);
     } catch (err: any) {
     console.log("🚀 ~ handleSubmit ~ err:", err)
-    if (err && err.response?.data?.detail == "Email already signed up") {
+    if (err && err.response?.data?.detail == "This email address is already on the waitlist.") {
         toast.error("Email already signed up for the waitlist.");
         return;
     }
