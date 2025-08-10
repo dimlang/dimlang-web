@@ -10,12 +10,12 @@ export class ApiRoutes {
   /**
    * The test base url for the application
    */
-  static BASE_URL_TEST: string = "https://dimlang-alb-dev-664463360.us-east-1.elb.amazonaws.com/api/v1";
+  static BASE_URL_TEST: string = "https://dimlang-alb-dev-641840297576.us-east-1.elb.amazonaws.com/api/v1";
 
   /**
    * The live base url for the application
    */
-  static BASE_URL_LIVE: string = "https://dimlang-alb-dev-664463360.us-east-1.elb.amazonaws.com/api/v1";
+  static BASE_URL_LIVE: string = "https://dimlang-alb-dev-641840297576.us-east-1.elb.amazonaws.com/api/v1";
 
   /**
    * The base url being used for the application
