@@ -7,6 +7,9 @@ import Image from "next/image";
 import images from "@/public/images";
 import ClaimYourSpot from "../components/homepage/claim-spot";
 import useResponsiveness from "../hooks/useResponsiveness";
+import WhatDimlangUnderstands from "../components/about/what-dimlang-understands";
+import ExampleQuestions from "../components/about/example-questions";
+import WhyDimlang from "../components/about/why-dimlang";
 
 type Props = {};
 
@@ -30,8 +33,7 @@ export default function AboutPage({}: Props) {
             variants={itemVariants}
             className="text-xl font-[200] w-full md:w-[50%] mb-6 text-white"
           >
-            Next-generation AI platform built for creators, storytellers, and
-            brands who want to do more with their long-form content
+            Enterprise Content Intelligence Platform that transforms organizational knowledge into institutional intelligence
           </motion.p>
         </div>
         <div className="container md:h-[100px] w-full mb-14 relative z-20">
@@ -125,26 +127,22 @@ export default function AboutPage({}: Props) {
               {/* Content Box */}
               <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
                 <p className="text-center text-lg leading-8 md:leading-10 text-white">
-                  Dimlang is a next-generation AI platform built for creators,
-                  storytellers, and brands who want to do more with their
-                  long-form content. From interviews to podcasts, we use
-                  powerful AI to automatically remix and repurpose your videos
-                  into short-form clips that capture attention, spark emotion,
-                  and drive engagement across platforms like Instagram, YouTube,
-                  and TikTok.
+                  Dimlang is an Enterprise Content Intelligence Platform that transforms how organizations preserve, understand, and reuse their knowledge. Every day, enterprises create enormous amounts of valuable content through documents, presentations, meetings, videos, reports, and conversations. Once created, this knowledge becomes fragmented across systems and is rarely reused effectively.
                   <br />
                   <br />
-                  We exist to make creative content more scalable, more
-                  strategic, and more impactful.From ideation to execution,
-                  Dimlang powers the entire content lifecycle, helping creators
-                  go from raw ideas to finished, platform-ready stories with
-                  speed and precision.
+                  We create a living knowledge layer that understands enterprise content and enables teams to search it, reason over it, compare it, and generate new work grounded in trusted organizational knowledge. From narrative intelligence to enterprise search, Dimlang helps organizations build on what they already know rather than starting from scratch every time.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <WhatDimlangUnderstands />
+
+      <ExampleQuestions />
+
+      <WhyDimlang />
 
       <ClaimYourSpot />
     </main>
