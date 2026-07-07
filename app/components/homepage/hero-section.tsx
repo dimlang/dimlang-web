@@ -36,15 +36,15 @@ export default function HeroSection({}: Props) {
       >
         <motion.h1
           variants={item}
-          className="text-5xl font-semibold pb-3 bg-clip-text text-transparent animate-gradient bg-[length:150%_150%] bg-gradient-to-t from-gray-700 to-white"
+          className="text-5xl md:text-6xl font-semibold pb-3 bg-clip-text text-transparent animate-gradient bg-[length:150%_150%] bg-gradient-to-t from-gray-700 to-white"
         >
-          Your organization's knowledge shouldn't disappear after it's created.
+          Make confident decisions. Never lose institutional context.
         </motion.h1>
         <motion.p
           variants={item}
           className="text-xl font-[200] w-full md:w-[60%] mx-auto pb-6 text-white"
         >
-          Dimlang transforms documents, meetings, presentations, videos, and conversations into a living knowledge system that your teams can search, understand, and build upon.
+          The institutional knowledge platform for organizations where decisions and consistency matter.
         </motion.p>
         <motion.div
           variants={item}

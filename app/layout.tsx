@@ -4,8 +4,8 @@ import LayoutWrapper from "./components/shared/LayoutWrapper";
 import GlobalProvider from "./components/shared/Provider";
 
 export const metadata: Metadata = {
-  title: "Dimlang - Enterprise Content Intelligence Platform",
-  description: "Transform organizational content into institutional intelligence. Dimlang creates a living knowledge layer that helps teams search, understand, and build upon enterprise knowledge.",
+  title: "Dimlang - Institutional Knowledge Platform",
+  description: "Make confident decisions. Never lose institutional context. Dimlang is the institutional knowledge platform for organizations where decisions and consistency matter.",
 };
 
 export default function RootLayout({

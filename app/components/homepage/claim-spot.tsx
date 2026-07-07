@@ -21,8 +21,8 @@ export default function ClaimYourSpot({}: Props) {
           className="space-y-12 mb-10"
         >
           <motion.div variants={itemVariants} className="space-y-4">
-            <h2 className="text-4xl md:text-6xl text-center md:text-left font-normal text-white md:w-[70%]">
-              Your knowledge is your greatest competitive advantage.
+            <h2 className="text-4xl md:text-6xl text-center md:text-left font-normal text-white md:w-[75%]">
+              Make confident decisions. Never lose institutional context.
             </h2>
           </motion.div>
         </motion.div>
@@ -30,7 +30,7 @@ export default function ClaimYourSpot({}: Props) {
         <div className="flex flex-col md:flex-row p-6 pl-0 border-e-2 border-t-2 border-white rounded-tr-3xl">
           <div className="flex flex-col mb-10 scale-90 md:scale-100 md:mb-0">
             <h4 className="text-3xl md:text-4xl mb-6 md:w-[85%] text-gray-300">
-              Don't let it remain trapped inside documents. Transform it into organizational intelligence.
+              See how Dimlang works for your context—campaigns, executive communications, research, regulatory compliance, or public sector operations.
             </h4>
             <button
               onClick={() => setIsWaitlistModalVisible(true)}

@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSection from "./components/homepage/hero-section";
-import WhoItsForSection from "./components/homepage/who-its-for";
+import TheProblem from "./components/homepage/the-problem";
+import ThePlatform from "./components/homepage/the-platform";
+import ProofContexts from "./components/homepage/proof-contexts";
 import CoreFeatures from "./components/homepage/core-features";
 import ProductVision from "./components/homepage/product-vision";
 import ClaimYourSpot from "./components/homepage/claim-spot";
@@ -11,7 +13,9 @@ export default function Homepage({}: Props) {
   return (
     <>
       <HeroSection />
-      <WhoItsForSection />
+      <TheProblem />
+      <ThePlatform />
+      <ProofContexts />
       <CoreFeatures />
       <ProductVision />
       <ClaimYourSpot />

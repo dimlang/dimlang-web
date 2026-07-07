@@ -10,34 +10,34 @@ type Props = {};
 export default function CoreFeatures({}: Props) {
   const features = [
     {
-      title: "Knowledge Ingestion",
+      title: "Never lose institutional context",
       description:
-        "Ingest documents, presentations, videos, meeting recordings, emails, and enterprise repositories. Dimlang understands relationships, context, and evolving narratives across your entire knowledge base.",
+        "Preserve everything your organization knows—documents, meetings, decisions, conversations—and make it accessible when decisions need to be made.",
     },
     {
-      title: "Narrative Intelligence",
+      title: "Understand how decisions evolved",
       description:
-        "Track how ideas, decisions, and guidance evolve over time. Understand authorship, supporting evidence, and the historical context behind every piece of organizational knowledge.",
+        "Track how ideas, guidance, and commitments changed over time. See who said what, when, and why.",
     },
     {
-      title: "Enterprise Search",
+      title: "Make confident decisions at scale",
       description:
-        "Move beyond keyword matching. Ask complex questions and receive answers grounded in your organization's trusted content with full source attribution and evidence trails.",
+        "Ask complex questions and receive answers grounded in your accumulated knowledge with full source attribution.",
     },
     {
-      title: "AI Workspaces",
+      title: "Generate work grounded in your truth",
       description:
-        "Generate new documents, presentations, and reports using only approved organizational content. Every output is traceable to its source material.",
+        "Create presentations, reports, communications, and policy documents using only your organization's approved knowledge.",
     },
     {
-      title: "Multi-Model AI Support",
+      title: "Ensure consistency across time",
       description:
-        "Choose the right AI model for each task. Dimlang works with leading language models while maintaining consistent access to your enterprise knowledge layer.",
+        "Compare statements, positions, and commitments across years of organizational knowledge to avoid contradictions.",
     },
     {
-      title: "Governance & Security",
+      title: "Secure and governed by default",
       description:
-        "Enterprise-grade security with role-based access control, audit trails, and compliance support. Your knowledge remains secure and properly governed.",
+        "Role-based access, audit trails, and compliance support ensure your institutional knowledge remains properly governed.",
     },
   ];
 
@@ -53,10 +53,10 @@ export default function CoreFeatures({}: Props) {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              Platform Capabilities
+              What Dimlang delivers
             </h2>
             <p className="text-gray-300 text-lg w-full md:w-[50%] mx-auto">
-              Turn organizational content into organizational intelligence
+              Outcomes that matter for organizations where decisions and consistency are critical
             </p>
           </motion.div>
         </motion.div>

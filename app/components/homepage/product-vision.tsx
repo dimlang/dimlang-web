@@ -17,24 +17,23 @@ export default function ProductVision() {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              Build on what your organization already knows.
+              Knowledge that compounds
             </h2>
           </motion.div>
 
           <div className="md:container">
-            <div className="relative w-full md:w-2/3 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm"> {/* before:animate-spin-slow */}
+            <div className="relative w-full md:w-2/3 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm">
               {/* Content Box */}
               <div className="relative p-8 md:p-10 bg-black rounded-[inherit] border border-white/20 z-10">
-                <div className="text-center leading-relaxed text-white space-y-4">
-                  <p className="text-2xl md:text-3xl font-light">
-                    Every meeting.<br />
-                    Every report.<br />
-                    Every presentation.<br />
-                    Every decision.<br />
-                    Every conversation.
+                <div className="text-center leading-relaxed text-white space-y-6">
+                  <p className="text-lg text-gray-300">
+                    Every document added. Every question asked. Every decision made. Your institutional knowledge becomes more valuable over time.
+                  </p>
+                  <p className="text-2xl md:text-3xl font-light pt-4">
+                    Unlike tools that help individuals work faster, Dimlang builds an asset that makes your entire organization smarter.
                   </p>
                   <p className="text-lg text-gray-300 pt-4">
-                    Dimlang transforms them into a living knowledge system that becomes more valuable over time.
+                    This is infrastructure that compounds in value—not software that helps you move faster today and is forgotten tomorrow.
                   </p>
                 </div>
               </div>

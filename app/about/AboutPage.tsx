@@ -33,7 +33,7 @@ export default function AboutPage({}: Props) {
             variants={itemVariants}
             className="text-xl font-[200] w-full md:w-[50%] mb-6 text-white"
           >
-            Enterprise Content Intelligence Platform that transforms organizational knowledge into institutional intelligence
+            The institutional knowledge platform for organizations where decisions and consistency matter
           </motion.p>
         </div>
         <div className="container md:h-[100px] w-full mb-14 relative z-20">
@@ -127,10 +127,10 @@ export default function AboutPage({}: Props) {
               {/* Content Box */}
               <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
                 <p className="text-center text-lg leading-8 md:leading-10 text-white">
-                  Dimlang is an Enterprise Content Intelligence Platform that transforms how organizations preserve, understand, and reuse their knowledge. Every day, enterprises create enormous amounts of valuable content through documents, presentations, meetings, videos, reports, and conversations. Once created, this knowledge becomes fragmented across systems and is rarely reused effectively.
+                  Dimlang is an institutional knowledge platform that transforms how organizations preserve, understand, and use accumulated knowledge for critical decisions. Every day, organizations create valuable knowledge through documents, meetings, research, policies, and conversations. As organizations grow, this knowledge fragments—making confident decisions harder and institutional memory fragile.
                   <br />
                   <br />
-                  We create a living knowledge layer that understands enterprise content and enables teams to search it, reason over it, compare it, and generate new work grounded in trusted organizational knowledge. From narrative intelligence to enterprise search, Dimlang helps organizations build on what they already know rather than starting from scratch every time.
+                  We build infrastructure that makes your accumulated knowledge accessible when decisions need to be made. Unlike tools that help individuals work faster, Dimlang builds an asset that makes your entire organization smarter—knowledge that compounds in value rather than disappearing after it's created.
                 </p>
               </div>
             </div>
