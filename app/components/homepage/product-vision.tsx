@@ -17,23 +17,26 @@ export default function ProductVision() {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              Product Vision Tease
+              Build on what your organization already knows.
             </h2>
           </motion.div>
 
           <div className="md:container">
-            <div className="relative w-full md:w-1/2 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm"> {/* before:animate-spin-slow */}
+            <div className="relative w-full md:w-2/3 p-[1px] rounded-2xl mx-auto overflow-hidden before:content-[''] before:scale-150 before:absolute before:inset-0 before:rounded-[inherit] before:bg-[conic-gradient(from_0deg,rgba(255,255,255,0.8),transparent,rgba(255,255,255,0.8))] before:-rotate-45 before:z-0 before:blur-sm"> {/* before:animate-spin-slow */}
               {/* Content Box */}
-              <div className="relative p-4 bg-black rounded-[inherit] border border-white/20 z-10">
-                <p className="text-center leading-8 text-white">
-                  Dimlang isn't a tool, it's the future of influence. Coming
-                  soon: ToneGraph™ performance scoring, AI-created message
-                  variants for A/B testing, live content impact predictions,
-                  real-time sentiment maps, and trend sync. Dimlang will align
-                  your next clip with what the world's watching now. We're
-                  building the world's first AI-native content orchestration
-                  platform.
-                </p>
+              <div className="relative p-8 md:p-10 bg-black rounded-[inherit] border border-white/20 z-10">
+                <div className="text-center leading-relaxed text-white space-y-4">
+                  <p className="text-2xl md:text-3xl font-light">
+                    Every meeting.<br />
+                    Every report.<br />
+                    Every presentation.<br />
+                    Every decision.<br />
+                    Every conversation.
+                  </p>
+                  <p className="text-lg text-gray-300 pt-4">
+                    Dimlang transforms them into a living knowledge system that becomes more valuable over time.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

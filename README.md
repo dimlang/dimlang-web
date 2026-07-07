@@ -1,40 +1,42 @@
-# Dimlang – The Future of AI-Driven Content Creation
+# Dimlang – Enterprise Content Intelligence Platform
 
-Welcome to the official landing page for **Dimlang**, the AI platform built to empower creators, marketers, and brands with intelligent, automated content creation.
+Welcome to the official landing page for **Dimlang**, the Enterprise Content Intelligence Platform that transforms organizational content into institutional intelligence.
 
-We believe in freeing you from the grind of edits, captions, and platform wrangling — so you can focus on what matters: **your story**.
+We believe your organization’s knowledge shouldn’t disappear after it’s created — it should become a living knowledge system that becomes more valuable over time.
 
 ---
 
 ## 🚀 What is Dimlang?
 
-Dimlang is your AI-powered creative partner. We’re building a full-stack content engine that:
-- 🎬 **Automates video/audio editing** with smart cut detection  
-- ✍️ **Generates captions**, voiceovers, and mood-based scene tones — instantly  
-- 🔗 **Integrates with Instagram, TikTok, YouTube**, and more  
-- ⚡ Offers creators and businesses a way to **scale storytelling without burnout**  
+Dimlang is an Enterprise Content Intelligence Platform that helps organizations:
+- 📚 **Transform enterprise content** into a living knowledge layer  
+- 🔍 **Enable semantic search** across documents, meetings, presentations, and videos  
+- 🧠 **Understand relationships** between organizational knowledge  
+- ✅ **Generate new work** grounded in trusted, approved content  
+- 🔐 **Maintain governance** with role-based access and audit trails  
 
-This repository contains the **frontend code** for our waitlist landing page — the first step in welcoming users to the revolution.
+This repository contains the **frontend code** for our landing page — showcasing how Dimlang helps enterprises preserve, understand, and reuse organizational knowledge.
 
 ---
 
-## 📩 Join the Movement
+## 📩 Request a Demo
 
-We’re building in public — and you can be a part of it.
+We’re working with forward-thinking enterprises across industries.
 
-If you’re a creator, founder, or forward-thinking team:  
-**[→ Join the Waitlist](https://dimlang.com)**  
-Be first. Be loud. Be limitless.
+If you’re looking to unlock the value trapped in your organization’s content:  
+**[→ Request a Demo](https://dimlang.com)**  
+Transform knowledge into intelligence.
 
 ---
 
 ## 🧰 Tech Stack
 
-Dimlang’s waitlist frontend is built with a modern and scalable web stack:
+Dimlang’s landing page is built with a modern and scalable web stack:
 
 - ⚛️ [Next.js](https://nextjs.org) – App router, server components, and full-stack capabilities  
 - 💨 [Tailwind CSS](https://tailwindcss.com) – Utility-first CSS framework for fast and responsive UI  
-- 🧠 [FastAPI](https://fastapi.tiangolo.com) – Blazing fast Python backend for waitlist handling (soon to be open-sourced)  
+- 🎭 [Framer Motion](https://www.framer.com/motion/) – Production-ready animations and interactions
+- 🧠 [FastAPI](https://fastapi.tiangolo.com) – Python backend for demo request handling  
 - 🔔 [Sonner](https://sonner.emilkowal.dev) – Elegant toast notifications  
 - 🎨 [Lucide Icons](https://lucide.dev) – Clean, beautiful icon system  
 - 🗂️ [TypeScript](https://www.typescriptlang.org/) – Type-safe JavaScript for maintainable code  

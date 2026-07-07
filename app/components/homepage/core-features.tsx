@@ -10,34 +10,34 @@ type Props = {};
 export default function CoreFeatures({}: Props) {
   const features = [
     {
-      title: "AI Remix Engine",
+      title: "Knowledge Ingestion",
       description:
-        "Upload once, generate 10x the output. Dimming cuts, captions, and assembles content like a human editor, only faster.",
+        "Ingest documents, presentations, videos, meeting recordings, emails, and enterprise repositories. Dimlang understands relationships, context, and evolving narratives across your entire knowledge base.",
     },
     {
-      title: "Campaign Intelligence Toolkit",
+      title: "Narrative Intelligence",
       description:
-        "Measure tone resonance, sentiment shift, and message impact across audiences in real time. Perfect for political campaigns, brand marketers, and advocacy campaigns.",
+        "Track how ideas, decisions, and guidance evolve over time. Understand authorship, supporting evidence, and the historical context behind every piece of organizational knowledge.",
     },
     {
-      title: "ToneGraph™ Engine",
+      title: "Enterprise Search",
       description:
-        "Let your voice be heard and felt. Our proprietary ToneGraph™ system learns how your audience responds to different emotional deliveries and recommends what to use next.",
+        "Move beyond keyword matching. Ask complex questions and receive answers grounded in your organization's trusted content with full source attribution and evidence trails.",
     },
     {
-      title: "Smart Scheduler",
+      title: "AI Workspaces",
       description:
-        "Post like a strategist: Dimlang predicts ideal timing for maximum reach and resonance. (Time: Smart-timed by Dimlang)",
+        "Generate new documents, presentations, and reports using only approved organizational content. Every output is traceable to its source material.",
     },
     {
-      title: "Unified Dashboard",
+      title: "Multi-Model AI Support",
       description:
-        "Your content command center. Track time, reach, audience sentiment, and performance all in one place.",
+        "Choose the right AI model for each task. Dimlang works with leading language models while maintaining consistent access to your enterprise knowledge layer.",
     },
     {
-      title: "Multi-User Workflow",
+      title: "Governance & Security",
       description:
-        "Collaboration for modern teams. Review, approve, and publish across roles and departments.",
+        "Enterprise-grade security with role-based access control, audit trails, and compliance support. Your knowledge remains secure and properly governed.",
     },
   ];
 
@@ -53,8 +53,11 @@ export default function CoreFeatures({}: Props) {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              Our Core Features
+              Platform Capabilities
             </h2>
+            <p className="text-gray-300 text-lg w-full md:w-[50%] mx-auto">
+              Turn organizational content into organizational intelligence
+            </p>
           </motion.div>
         </motion.div>
 

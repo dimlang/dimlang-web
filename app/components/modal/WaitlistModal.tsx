@@ -59,15 +59,14 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
         preferredPlatforms: preferredPlatforms,
       });
 
-      toast.success("Successfully joined the waitlist!");
+      toast.success("Demo request submitted successfully!");
       unsetValues();
       setVisibility(false);
     } catch (err: any) {
-    console.log("🚀 ~ handleSubmit ~ err:", err)
-    if (err && err.response?.data?.detail == "This email address is already on the waitlist.") {
-        toast.error("Email already signed up for the waitlist.");
+      if (err && err.response?.data?.detail == "This email address is already on the waitlist.") {
+        toast.error("This email has already been submitted.");
         return;
-    }
+      }
       toast.error("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
@@ -98,9 +97,9 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
     >
       <>
         <div className="flex flex-col items-center mb-10">
-          <h3 className="mb-1 text-xl font-medium">Unlock Early Access</h3>
+          <h3 className="mb-1 text-xl font-medium">Request a Demo</h3>
           <p className="text-white text-[0.8rem] font-normal opacity-80 text-center">
-            We're rolling out something special. Be among the first to try it.
+            See how Dimlang transforms enterprise content into organizational intelligence.
           </p>
         </div>
         <div className="w-full sm:w-[28rem] p-6 md:p-10 rounded-[20px] glass-effect">
@@ -132,7 +131,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
             {/* Multi-select for Content Types */}
             <div className="flex flex-col">
               <label htmlFor="contentType" className="text-xs mb-1">
-                What type of content do you create?
+                What type of content does your organization work with?
               </label>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -158,7 +157,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuSeparator />
-                  {["Short videos", "Podcasts", "Blog posts", "Tutorials"].map(
+                  {["Documents", "Presentations", "Meeting Recordings", "Research Papers"].map(
                     (option) => (
                       <DropdownMenuItem
                         key={option}
@@ -186,7 +185,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
             {/* Multi-select for Platforms */}
             <div className="flex flex-col">
               <label htmlFor="contentPublisher" className="text-xs mb-1">
-                Where do you usually publish your content?
+                What industry are you in?
               </label>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -213,11 +212,11 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuSeparator />
                   {[
-                    "YouTube",
-                    "TikTok",
-                    "Instagram",
-                    "Substack",
-                    "Spotify",
+                    "Pharmaceuticals",
+                    "Healthcare",
+                    "Financial Services",
+                    "Professional Services",
+                    "Manufacturing",
                   ].map((option) => (
                     <DropdownMenuItem
                       key={option}
@@ -246,7 +245,7 @@ const WaitlistModal: FunctionComponent<WaitlistModalProps> = ({
               onClick={handleSubmit}
               className="bg-primary hover:bg-primary-sub text-white px-6 py-2 rounded-md font-medium transition-colors duration-200 text-sm w-full mt-2"
             >
-              {loading ? "Joining..." : "Join the Waitlist"}
+              {loading ? "Submitting..." : "Request Demo"}
             </button>
             <button
               onClick={() => {

@@ -38,26 +38,39 @@ export default function HeroSection({}: Props) {
           variants={item}
           className="text-5xl font-semibold pb-3 bg-clip-text text-transparent animate-gradient bg-[length:150%_150%] bg-gradient-to-t from-gray-700 to-white"
         >
-          AI-Powered Storytelling at Scale
+          Your organization's knowledge shouldn't disappear after it's created.
         </motion.h1>
         <motion.p
           variants={item}
-          className="text-xl font-[200] w-full md:w-[50%] mx-auto pb-6 text-white"
+          className="text-xl font-[200] w-full md:w-[60%] mx-auto pb-6 text-white"
         >
-          Dimlang is the AI-native platform where content becomes culture. One
-          upload, infinite impact through emotion, precision, and global reach.
+          Dimlang transforms documents, meetings, presentations, videos, and conversations into a living knowledge system that your teams can search, understand, and build upon.
         </motion.p>
-        <motion.button
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 20px rgba(124, 58, 237, 0.5)",
-          }}
-          onClick={() => setIsWaitlistModalVisible(true)}
-          whileTap={{ scale: 0.95 }}
-          className="bg-primary hover:primary-sub text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
+        <motion.div
+          variants={item}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          Join the Creative Revolution
-        </motion.button>
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 0 20px rgba(124, 58, 237, 0.5)",
+            }}
+            onClick={() => setIsWaitlistModalVisible(true)}
+            whileTap={{ scale: 0.95 }}
+            className="bg-primary hover:primary-sub text-white px-8 py-3 rounded-xl font-medium transition-colors duration-200 text-sm"
+          >
+            Request a Demo
+          </motion.button>
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-xl font-medium transition-colors duration-200 text-sm border border-white/20"
+          >
+            See How It Works
+          </motion.button>
+        </motion.div>
       </motion.div>
       <motion.div
         variants={item}

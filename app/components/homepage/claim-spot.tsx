@@ -21,23 +21,22 @@ export default function ClaimYourSpot({}: Props) {
           className="space-y-12 mb-10"
         >
           <motion.div variants={itemVariants} className="space-y-4">
-            <h2 className="text-4xl md:text-6xl text-center md:text-left font-normal text-white md:w-[60%]">
-              The future of storytelling needs your voice.
+            <h2 className="text-4xl md:text-6xl text-center md:text-left font-normal text-white md:w-[70%]">
+              Your knowledge is your greatest competitive advantage.
             </h2>
           </motion.div>
         </motion.div>
 
         <div className="flex flex-col md:flex-row p-6 pl-0 border-e-2 border-t-2 border-white rounded-tr-3xl">
           <div className="flex flex-col mb-10 scale-90 md:scale-100 md:mb-0">
-            <h4 className="text-3xl md:text-4xl mb-6 md:w-[80%] text-gray-300">
-              Dimlang is inviting the first wave of visionary creators,
-              campaigners, and content teams to shape what's next.
+            <h4 className="text-3xl md:text-4xl mb-6 md:w-[85%] text-gray-300">
+              Don't let it remain trapped inside documents. Transform it into organizational intelligence.
             </h4>
             <button
               onClick={() => setIsWaitlistModalVisible(true)}
-              className="bg-primary hover:bg-primary-sub text-white px-6 py-3 rounded-full w-fit font-medium transition-colors duration-200 text-sm"
+              className="bg-primary hover:bg-primary-sub text-white px-8 py-3 rounded-full w-fit font-medium transition-colors duration-200 text-base"
             >
-              Claim Your Spot
+              Request a Demo
             </button>
           </div>
 
