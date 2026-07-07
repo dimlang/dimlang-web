@@ -17,7 +17,7 @@ export default function ProductVision() {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              Knowledge that compounds
+              Intelligence that grows with you
             </h2>
           </motion.div>
 
@@ -26,14 +26,17 @@ export default function ProductVision() {
               {/* Content Box */}
               <div className="relative p-8 md:p-10 bg-black rounded-[inherit] border border-white/20 z-10">
                 <div className="text-center leading-relaxed text-white space-y-6">
-                  <p className="text-lg text-gray-300">
-                    Every document added. Every question asked. Every decision made. Your institutional knowledge becomes more valuable over time.
-                  </p>
-                  <p className="text-2xl md:text-3xl font-light pt-4">
-                    Unlike tools that help individuals work faster, Dimlang builds an asset that makes your entire organization smarter.
+                  <p className="text-2xl md:text-3xl font-light">
+                    Knowledge compounds.
                   </p>
                   <p className="text-lg text-gray-300 pt-4">
-                    This is infrastructure that compounds in value—not software that helps you move faster today and is forgotten tomorrow.
+                    Unlike tools that help you work faster today and are forgotten tomorrow, Dimlang builds an asset that becomes more valuable over time.
+                  </p>
+                  <p className="text-lg text-gray-300">
+                    The more your organization uses Dimlang, the smarter it becomes.
+                  </p>
+                  <p className="text-xl text-white font-light pt-4">
+                    This isn't software. It's infrastructure for organizational learning.
                   </p>
                 </div>
               </div>

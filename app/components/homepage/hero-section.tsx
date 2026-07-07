@@ -38,13 +38,13 @@ export default function HeroSection({}: Props) {
           variants={item}
           className="text-5xl md:text-6xl font-semibold pb-3 bg-clip-text text-transparent animate-gradient bg-[length:150%_150%] bg-gradient-to-t from-gray-700 to-white"
         >
-          Make confident decisions. Never lose institutional context.
+          Your organization gets smarter with every document, meeting, and decision.
         </motion.h1>
         <motion.p
           variants={item}
           className="text-xl font-[200] w-full md:w-[60%] mx-auto pb-6 text-white"
         >
-          The institutional knowledge platform for organizations where decisions and consistency matter.
+          Dimlang is the Organizational Intelligence Platform—where accumulated knowledge becomes trusted intelligence that makes better decisions possible.
         </motion.p>
         <motion.div
           variants={item}

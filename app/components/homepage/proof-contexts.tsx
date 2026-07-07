@@ -18,10 +18,10 @@ const ProofContexts = () => {
         >
           <motion.div variants={itemVariants} className="space-y-4 text-center">
             <h2 className="text-5xl md:text-7xl font-normal text-white">
-              One platform. Every context where knowledge matters.
+              Every organization where knowledge matters
             </h2>
-            <p className="text-gray-300 text-xl w-full md:w-[55%] mx-auto">
-              The platform remains constant. Only the knowledge changes.
+            <p className="text-gray-300 text-xl w-full md:w-[60%] mx-auto">
+              Whether you're running a political campaign, leading a research institution, building a company, or governing—Organizational Intelligence helps your organization continuously learn.
             </p>
           </motion.div>
 

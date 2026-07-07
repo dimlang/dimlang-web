@@ -33,7 +33,7 @@ export default function AboutPage({}: Props) {
             variants={itemVariants}
             className="text-xl font-[200] w-full md:w-[50%] mb-6 text-white"
           >
-            The institutional knowledge platform for organizations where decisions and consistency matter
+            The Organizational Intelligence Platform
           </motion.p>
         </div>
         <div className="container md:h-[100px] w-full mb-14 relative z-20">
@@ -127,10 +127,10 @@ export default function AboutPage({}: Props) {
               {/* Content Box */}
               <div className="relative h-full p-5 py-8 grid place-items-center bg-black rounded-[inherit] border border-white/20 z-10">
                 <p className="text-center text-lg leading-8 md:leading-10 text-white">
-                  Dimlang is an institutional knowledge platform that transforms how organizations preserve, understand, and use accumulated knowledge for critical decisions. Every day, organizations create valuable knowledge through documents, meetings, research, policies, and conversations. As organizations grow, this knowledge fragments—making confident decisions harder and institutional memory fragile.
+                  We believe organizations should become smarter over time. Not just accumulate more knowledge—actually become smarter. Every document created. Every meeting held. Every decision made. All of it should compound into intelligence that makes the organization better.
                   <br />
                   <br />
-                  We build infrastructure that makes your accumulated knowledge accessible when decisions need to be made. Unlike tools that help individuals work faster, Dimlang builds an asset that makes your entire organization smarter—knowledge that compounds in value rather than disappearing after it's created.
+                  Dimlang is the Organizational Intelligence Platform. We transform accumulated knowledge into trusted intelligence that helps organizations make better decisions and continuously learn. Unlike tools that help you work faster today and are forgotten tomorrow, we build infrastructure that makes your organization smarter over time.
                 </p>
               </div>
             </div>
