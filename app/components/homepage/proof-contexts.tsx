@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const ProofContexts = () => {
   return (
-    <section className="sectionPadding bg-black py-24 px-6" id="contexts">
+    <section className="sectionPadding bg-black py-24 px-6" id="services">
       <div className="container">
         <motion.div
           initial="hidden"
@@ -107,22 +107,22 @@ const ProofContexts = () => {
 
             {/* Bottom Row - Two Equal Columns */}
             <div className="col-span-full grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Regulatory Intelligence */}
+              {/* Legal & Compliance Intelligence */}
               <div className="h-[300px] md:h-[400px] text-white relative overflow-hidden before:content-[''] before:md:bg-none before:absolute before:top-0 before:left-0 before:w-full before:h-[250px] before:bg-gradient-to-b before:from-[#16023F] before:to-transparent before:blur-[2px] before:pointer-events-none before:z-10">
                 <div className="absolute p-6 md:p-0 md:top-8 md:left-8 z-10">
                   <h4 className="text-2xl md:text-3xl font-semibold mb-3">
-                    Regulatory Intelligence
+                    Legal & Compliance
                   </h4>
                   <p className="w-full md:w-[90%] mb-4">
-                    Compare submissions, trace evidence, and understand how guidance evolves.
+                    Maintain consistency across contracts, policies, and commitments. Compare documents and trace how requirements evolved.
                   </p>
                   <p className="w-full md:w-[95%] text-sm italic opacity-90 bg-black/30 backdrop-blur-sm p-2 rounded inline-block">
-                    "What guidance has changed across departments?"
+                    "Compare this contract with our previous agreements."
                   </p>
                 </div>
                 <Image
                   src={images.wif_content}
-                  alt="Regulatory Intelligence"
+                  alt="Legal & Compliance Intelligence"
                   fill
                   className="object-cover"
                 />
