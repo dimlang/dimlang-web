@@ -15,7 +15,13 @@ export default function TheProblem() {
           variants={containerVariants}
           className="space-y-12"
         >
-          <motion.div variants={itemVariants} className="space-y-6 text-center max-w-4xl mx-auto">
+          <motion.div variants={itemVariants} className="space-y-4 text-center max-w-4xl mx-auto">
+            <p className="text-gray-400 text-lg">
+              Dimlang is the Organizational Intelligence Platform—where accumulated knowledge becomes trusted intelligence that makes better decisions possible.
+            </p>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="space-y-6 text-center max-w-4xl mx-auto pt-8">
             <h2 className="text-4xl md:text-6xl font-normal text-white">
               Organizations create extraordinary knowledge every single day.
             </h2>
